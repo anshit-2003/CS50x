@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded',function()
+            {
+                let correct=document.querySelector('.correct');
+                correct.addEventListener('click',function()
+                {
+                    correct.style.background='#99ff99';
+                    document.querySelector('#feedback1').innerHTML='Correct!';
+
+                });
+
+                let incorrects=document.querySelectorAll('.incorrect');
+                for(let i = 0 ; i < incorrects.length ; i++)
+                {
+                    incorrects[i].addEventListener('click',function(){
+                        incorrects[i].style.backgroundColor = '#ff471a';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+
+                    });
+                }
+
+                document.querySelector('#Check').addEventListener('click',function(){
+                    let input = document.querySelector('input');
+                    if(input.value == "Tim Berners Lee")
+                    {
+                        input.style.backgroundColor = "#99ff99";
+                        document.querySelector('#feedback2').innerHTML = "Correct";
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = "#ff471a";
+                        document.querySelector('#feedback2').innerHTML = "Incorrect";
+                    }
+
+                });
+            });df
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    What is the capital of Australia?
+                </h3>
+                <button class="incorrect section">Sydney</button>
+                <button class="correct section">Canberra</button>
+                <button class="incorrect section">Melbourne</button>
+                <button class="incorrect section">Brisbane</button>
+            </div>
+            <p class="p" id = "feedback1"></p>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    Who is the father of World Wide Web?
+                </h3>
+                <input class="input" type="text"></input>
+                <button class = "button input" id="Check">Check Answer</button>
+                <p class='p' id = "feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

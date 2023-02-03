@@ -1,0 +1,62 @@
+body{
+  /* Setting Body Background to black */
+    background-image: url("bg.png");
+}
+.center {
+  /* Centering a Div */
+    margin: auto;
+    margin-top: 11em;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+  }
+  form{
+    /* Setting font color of form to white */
+    color: white;
+  }
+  .bg_color{
+    /* Class for setting bg color */
+    background-color: rgb(21, 21, 21);
+  }
+  .heading {
+    /* Class for heading */
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    color: white;
+    font-family: "Audiowide";
+    text-decoration: underline;
+    padding: 10px;
+  }
+  .white_font
+  {
+    /* Class for making text white */
+    color: white;
+  }
+  .tr{
+    /* Class for table row to make it center and white */
+    margin: auto;
+    margin-left: 23em;
+    margin-top: 1em;
+    text-align: center;
+    width: 50%;
+    color: white;
+
+  }
+  th{
+    /* Make Table Head values Underlined and set their font size to 2em */
+    text-decoration: underline;
+    font-size: 2em;
+  }
+  td{
+    /* Set Table Data Font Size to 1.25em */
+    font-size: 1.25em;
+  }
+  .a{
+    /* Class a to set Anchor Tag in the about Page to the Center */
+    margin-left: 12em;
+    margin-top: 11em;
+    width: 50%;
+    padding: 10px;
+
+  }
