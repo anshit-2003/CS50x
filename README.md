@@ -16,5 +16,5 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 Thank you for all CS50.
 
-#  My CS50-Certificate: 
+# CS50-Certificate: 
 ![CS50x](https://user-images.githubusercontent.com/84705984/216636674-bb5c7f9e-06f8-45a1-986c-962b4e55417f.png)
